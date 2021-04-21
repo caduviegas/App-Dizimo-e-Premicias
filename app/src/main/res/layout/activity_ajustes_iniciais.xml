@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AjustesIniciaisActivity">
+
+    <ImageView
+        android:id="@+id/iv_volta"
+        android:layout_width="@dimen/margem_32"
+        android:layout_height="@dimen/margem_32"
+        android:src="@drawable/ic_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginLeft="@dimen/margem_8"
+        />
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pergunta"
+        android:textColor="@color/azulEscuro"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margem_100"
+        android:layout_marginLeft="@dimen/margem_48"
+        android:textSize="@dimen/font_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sub_titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/azulEscuro"
+        android:text="@string/explica_pergunta"
+        android:layout_marginTop="@dimen/margem_10"
+        android:textSize="@dimen/font_10"
+        app:layout_constraintLeft_toLeftOf="@id/tv_titulo"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/margem_48"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_porcentagem"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bt_entendimento"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_titulo"
+        android:layout_marginLeft="@dimen/margem_48"
+        android:layout_marginRight="@dimen/margem_48">
+
+        <TextView
+            android:id="@+id/tv_porcentagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto_porcentagem_dizimo"
+            android:textStyle="bold"
+            android:textColor="@color/azulPrincipal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_valor_porcentagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/porcentagem_10"
+            android:textSize="@dimen/font_18"
+            android:textColor="@color/azulPrincipal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_porcentagem"/>
+
+        <SeekBar
+            android:id="@+id/sb_barra_de_porcentagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tv_valor_porcentagem"
+            android:progress="1"
+            android:max="3"
+            android:layout_marginTop="@dimen/margem_10"/>
+        <TextView
+            android:id="@+id/tv_cinco_porcento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sb_barra_de_porcentagem"
+            android:text="@string/porcentagem_5"
+            android:layout_marginTop="@dimen/margem_10"/>
+        <TextView
+            android:id="@+id/tv_vinte_porcento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sb_barra_de_porcentagem"
+            android:text="@string/porcentagem_20"
+            android:layout_marginTop="@dimen/margem_10"/>
+
+        <CheckBox
+            android:id="@+id/cb_marcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_cinco_porcento"
+            android:layout_marginTop="@dimen/margem_10"
+            android:text="@string/texto_checkbox_dizimo"
+            android:textColor="@color/azulPrincipal"
+            android:buttonTint="@color/azulPrincipal"
+            android:checked="true"/>
+
+        <RadioGroup
+            android:id="@+id/rg_primicia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cb_marcar"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_calculo_todos_os_meses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opcao_todos_os_meses"
+                android:textColor="@color/azulPrincipal"
+                android:buttonTint="@color/azulPrincipal"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rb_calculo_com_fevereiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/opcao_mes_de_fevereiro"
+                android:textColor="@color/azulPrincipal"
+                android:buttonTint="@color/azulPrincipal"/>
+
+
+        </RadioGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <Button
+        android:id="@+id/bt_entendimento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_continuar"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/azulPrincipal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/cl_porcentagem"
+        app:layout_constraintRight_toRightOf="@id/cl_porcentagem"
+        android:layout_marginBottom="@dimen/margem_40"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

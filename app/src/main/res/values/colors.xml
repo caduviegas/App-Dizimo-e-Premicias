@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="azulPrincipal">#4211D0</color>
+    <color name="azulEscuro">#2d0D88</color>
+    <color name="azulClaro">#c8b8f7</color>
+    <color name="cinza">#D7D7D7</color>
+    <color name="azulMuitoClaro">#F5F6FA</color>
+    <color name="cinzaAzulado">#BFC4DA</color>
+    <color name="azulMuitoMuitoClaro">#E7E8EB</color>
 </resources>

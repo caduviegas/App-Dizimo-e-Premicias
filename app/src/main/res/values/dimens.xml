@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margem_10">10dp</dimen>
+    <dimen name="margem_48">48dp</dimen>
+    <dimen name="margem_30">30dp</dimen>
+    <dimen name="margem_24">24dp</dimen>
+    <dimen name="margem_40">40dp</dimen>
+    <dimen name="font_20">20sp</dimen>
+    <dimen name="margem_100">100dp</dimen>
+    <dimen name="font_10">10sp</dimen>
+    <dimen name="margem_32">32dp</dimen>
+    <dimen name="margem_8">8dp</dimen>
+    <dimen name="font_18">18sp</dimen>
+    <dimen name="margem_4">4dp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_48">48sp</dimen>
+    <dimen name="margem_20">20dp</dimen>
+</resources>

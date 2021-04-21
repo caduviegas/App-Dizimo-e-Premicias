@@ -1,3 +1,49 @@
 <resources>
     <string name="app_name">AppDizimo</string>
+    <string name="pergunta">O que Você Deseja Calcular?</string>
+    <string name="explica_pergunta">Dízimos e Premicias podem ser calculados selecionando uma das oções abaixo</string>
+    <string name="entender">Entenda Como Funciona</string>
+    <string name="texto_um">Dízimo</string>
+    <string name="texto_dois">Premicias</string>
+    <string name="orientacoes">Orientações Básicas sobre o App</string>
+    <string name="texto_informacao">Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo! Manduma pindureta quium dia nois paga.
+
+\nMé faiz elementum girarzis, nisi eros vermeio. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. A ordem dos tratores não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.
+
+\nPaisis, filhis, espiritis santis. Interagi no mé, cursus quis, vehicula ac nisi. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Atirei o pau no gatis, per gatis num morreus.</string>
+    <string name="texto_porcentagem_dizimo">Porcentagem do Dízimo</string>
+    <string name="porcentagem_5">5%</string>
+    <string name="porcentagem_20">20%</string>
+    <string name="texto_checkbox_dizimo">Subtrair premicia antes de dizimar</string>
+    <string name="opcao_todos_os_meses">Cálculo considerando os meses com 30 dias</string>
+    <string name="opcao_mes_de_fevereiro">Cálculo considerando os dias do mês de %s</string>
+    <string name="porcentagem_variavel">%d%%</string>
+    <string name="botao_continuar">Continuar</string>
+    <string name="porcentagem_10">10%</string>
+    <string name="botao_1">1</string>
+    <string name="botao_2">2</string>
+    <string name="botao_3">3</string>
+    <string name="botao_4">4</string>
+    <string name="botao_5">5</string>
+    <string name="botao_6">6</string>
+    <string name="botao_7">7</string>
+    <string name="botao_8">8</string>
+    <string name="botao_9">9</string>
+    <string name="botao_0">0</string>
+    <string name="botao_apagar">⌫</string>
+    <string name="botao_calcular">Calcular</string>
+    <string name="salario">Salário Bruto</string>
+    <string name="cifrao">R$</string>
+    <string name="valor_salario">0,00</string>
+    <string name="valor_formatado">%.2f</string>
+    <string name="dizimo_calculado">Dízimo Calculado</string>
+    <string name="primicia_calculada">Primicia Calculada</string>
+    <string name="botao_voltar">Ir para o Inicio</string>
+    <string name="textview_detalhes_calculo">Detalhes do Cálculo</string>
+    <string name="salario_bruto">Salário Bruto</string>
+    <string name="dias_calculo">Dias para cálculo da primicia</string>
+    <string name="porcentagem_dizimo">Procentagem do Dízimo</string>
+    <string name="dinheiro_formatado">R$ %.2f</string>
+    <string name="salario_restante">Salário Restante</string>
+
 </resources>

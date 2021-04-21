@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculadoraActivity">
+
+    <ImageView
+        android:id="@+id/iv_volta"
+        android:layout_width="@dimen/margem_32"
+        android:layout_height="@dimen/margem_32"
+        android:src="@drawable/ic_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginLeft="@dimen/margem_8"
+        />
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/salario"
+        android:textColor="@color/azulEscuro"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margem_100"
+        android:layout_marginLeft="@dimen/margem_48"
+        android:textSize="@dimen/font_16"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_cifrao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cifrao"
+        android:textColor="@color/azulEscuro"
+        android:layout_marginLeft="@dimen/margem_48"
+        android:textSize="@dimen/font_48"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo" />
+    <TextView
+        android:id="@+id/tv_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valor_salario"
+        android:textColor="@color/cinzaAzulado"
+        android:textSize="@dimen/font_48"
+        app:layout_constraintTop_toTopOf="@id/tv_cifrao"
+        app:layout_constraintBottom_toBottomOf="@id/tv_cifrao"
+        android:layout_marginLeft="@dimen/margem_4"
+        app:layout_constraintLeft_toRightOf="@id/tv_cifrao"/>
+    <com.innaval.appdizimo.TecladoView
+        android:id="@+id/tv_calculadora"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.44"
+        android:layout_margin="@dimen/margem_10"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

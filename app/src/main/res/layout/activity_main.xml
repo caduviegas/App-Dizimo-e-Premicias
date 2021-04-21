@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,12 +8,125 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/pergunta"
+        android:textColor="@color/azulEscuro"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margem_100"
+        android:layout_marginLeft="@dimen/margem_48"
+        android:textSize="@dimen/font_20"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sub_titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/azulEscuro"
+        android:text="@string/explica_pergunta"
+        android:layout_marginTop="@dimen/margem_10"
+        android:textSize="@dimen/font_10"
+        app:layout_constraintLeft_toLeftOf="@id/tv_titulo"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="@dimen/margem_48"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_dizimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_titulo"
+        app:layout_constraintLeft_toLeftOf="@id/tv_sub_titulo"
+        app:layout_constraintBottom_toTopOf="@id/bt_entendimento"
+        app:cardBackgroundColor="@color/azulPrincipal"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardCornerRadius="@dimen/margem_10">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_dizimo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_wheat"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tv_dizimo"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="@dimen/margem_30"
+                />
+            <TextView
+                android:id="@+id/tv_dizimo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_um"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/margem_10"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_premicia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_titulo"
+        app:layout_constraintRight_toRightOf="@id/tv_sub_titulo"
+        app:layout_constraintBottom_toTopOf="@id/bt_entendimento"
+        app:cardBackgroundColor="@color/azulPrincipal"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardCornerRadius="@dimen/margem_10">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_premicias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_grapes"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/tv_premicias"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="@dimen/margem_30"
+                />
+            <TextView
+                android:id="@+id/tv_premicias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texto_dois"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textColor="@color/white"
+                android:layout_marginBottom="@dimen/margem_10"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/bt_entendimento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/entender"
+        android:textColor="@color/azulEscuro"
+        android:backgroundTint="@color/cinza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/tv_sub_titulo"
+        app:layout_constraintRight_toRightOf="@id/tv_sub_titulo"
+        android:layout_marginBottom="@dimen/margem_40"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

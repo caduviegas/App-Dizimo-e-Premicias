@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultadosActivity">
+
+    <ImageView
+        android:id="@+id/iv_volta"
+        android:layout_width="@dimen/margem_32"
+        android:layout_height="@dimen/margem_32"
+        android:src="@drawable/ic_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginLeft="@dimen/margem_8"
+        />
+
+    <TextView
+        android:id="@+id/tv_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dizimo_calculado"
+        android:textColor="@color/azulEscuro"
+        android:layout_marginTop="@dimen/margem_100"
+        android:layout_marginLeft="@dimen/margem_48"
+        android:textSize="@dimen/font_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_volta" />
+
+    <TextView
+        android:id="@+id/tv_valor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="R$ 0,00"
+        android:textColor="@color/azulEscuro"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginLeft="@dimen/margem_48"
+        android:textSize="@dimen/font_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo" />
+
+    <TextView
+        android:id="@+id/tv_titulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/primicia_calculada"
+        android:textColor="@color/azulEscuro"
+        android:layout_marginTop="@dimen/margem_24"
+        android:layout_marginLeft="@dimen/margem_48"
+        android:textSize="@dimen/font_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_valor1" />
+    <TextView
+        android:id="@+id/tv_valor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="R$ 0,00"
+        android:textColor="@color/azulEscuro"
+        android:layout_marginTop="@dimen/margem_10"
+        android:layout_marginLeft="@dimen/margem_48"
+        android:textSize="@dimen/font_20"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo2" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_informacoes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/tv_valor2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/azulMuitoMuitoClaro"
+        android:layout_marginRight="@dimen/margem_48"
+        android:layout_marginBottom="@dimen/margem_30"
+        app:layout_constraintBottom_toTopOf="@id/bt_entendimento">
+
+        <TextView
+            android:id="@+id/tv_titulo_resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_detalhes_calculo"
+            android:textColor="@color/azulEscuro"
+            android:textSize="@dimen/font_16"
+            android:layout_marginTop="@dimen/margem_10"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_salario_bruto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/salario_bruto"
+            android:textColor="@color/azulEscuro"
+            android:layout_marginTop="@dimen/margem_24"
+            android:layout_marginLeft="@dimen/margem_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_titulo_resultado"/>
+
+        <TextView
+            android:id="@+id/tv_bruto_subtraindo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/salario_restante"
+            android:textColor="@color/azulEscuro"
+            android:layout_marginTop="@dimen/margem_10"
+            android:layout_marginLeft="@dimen/margem_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_salario_bruto"/>
+
+        <TextView
+            android:id="@+id/tv_dias_calculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dias_calculo"
+            android:textColor="@color/azulEscuro"
+            android:layout_marginTop="@dimen/margem_10"
+            android:layout_marginLeft="@dimen/margem_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_bruto_subtraindo"/>
+
+        <TextView
+            android:id="@+id/tv_porcentagem_dizimo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/porcentagem_dizimo"
+            android:textColor="@color/azulEscuro"
+            android:layout_marginTop="@dimen/margem_10"
+            android:layout_marginLeft="@dimen/margem_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_dias_calculo"/>
+
+        <TextView
+        android:id="@+id/tv_valor_dinheiro_dizimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="R$ 0,00"
+        android:textColor="@color/azulEscuro"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margem_24"
+        android:layout_marginRight="@dimen/margem_24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo_resultado"/>
+
+        <TextView
+            android:id="@+id/tv_valor_dinheiro_primicia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="R$ 0,00"
+            android:textColor="@color/azulEscuro"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margem_10"
+            android:layout_marginRight="@dimen/margem_24"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_valor_dinheiro_dizimo"/>
+
+        <TextView
+            android:id="@+id/tv_valor_dias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="0"
+            android:textColor="@color/azulEscuro"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margem_10"
+            android:layout_marginRight="@dimen/margem_24"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_valor_dinheiro_primicia"/>
+
+        <TextView
+            android:id="@+id/tv_valor_porcentagem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="0%"
+            android:textColor="@color/azulEscuro"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margem_10"
+            android:layout_marginRight="@dimen/margem_24"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_valor_dias"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/margem_24"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/bt_entendimento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_voltar"
+        android:textColor="@color/azulEscuro"
+        android:backgroundTint="@color/cinza"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/cl_informacoes"
+        app:layout_constraintRight_toRightOf="@id/cl_informacoes"
+        android:layout_marginBottom="@dimen/margem_40"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
