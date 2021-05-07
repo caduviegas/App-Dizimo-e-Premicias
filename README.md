@@ -6,10 +6,10 @@
 Aplativo feito para calculos de Dizimos e Primicias 
 
 ## Informações Técnicas 
-- Linguagem Kotlin
-- Uso de Constraint Layout no Xml
-- Uso de RadioGroups
-- Construção de Teclado númerico usando CustomView
+- **Linguagem Kotlin
+- **Uso de Constraint Layout no Xml.
+- **Uso de RadioGroups
+- **Construção de Teclado númerico usando CustomView
 
 ## Desenvolvimento do Projeto
 <img src="img/tela-inicial-e-informações_1.gif" width="200">
@@ -23,5 +23,16 @@ Ao selecionar o evento "Dizimo" o usuário entra na aba para escolher algumas in
 <img src="img/calculadora_dizimo.gif" width="200">
 
 Após o usuário marcar suas preferências é levado a calculadora onde entrará com os dados do salário bruto e ao clicar em cálcular será levado a outra aba com as informações obtidas do cálculo.
+
+## Em Progresso
+
+-Configurar o botão "Ir para o Inicio dps resultados da Calculadora"
+
+## Melhorias Futuras
+- Melhorar as cores para visualização no Dark Mode
+- Colocar pontos para diferenciar as milhas
+- Colocar no padrão de arquitetura MVVM
+- Criar testes para execução
+
 
 
