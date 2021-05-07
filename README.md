@@ -22,6 +22,6 @@ Ao selecionar o evento "Dizimo" o usuário entra na aba para escolher algumas in
 
 <img src="img/calculadora_dizimo.gif" width="200">
 
-Após o usuário marcar suas preferências é levado a calculadora onde entrará com os dados do salário bruto
+Após o usuário marcar suas preferências é levado a calculadora onde entrará com os dados do salário bruto e ao clicar em cálcular será levado a outra aba com as informações obtidas do cálculo.
 
 
